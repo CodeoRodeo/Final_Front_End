@@ -1,27 +1,36 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
-/*.slideshow {
-    height: 600px;
-    img {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-      }
-}*/
-@media (min-width: 900px) {
-  .nav-wrapper {
-    font-family: 'Roboto Slab', serif;
+
+@font-face {
+    font-family: 'Antic Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Antic Slab'), local('AnticSlab-Regular'), url(AnticSlab.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+html {
+    /* Margin bottom by footer height */
+    margin-bottom: 100px;
+    /* Margin top by header height */
+    margin-top: 100px;
+}
+
+
+ .nav-wrapper {
+    font-family: 'Antic Slab', serif;
     display: -webkit-flex;
     -webkit-align-items: center;
     display: flex;
     align-items: center;
     /*webkit stuff above*/
-    border: 5px solid gray;
+    border: 3px solid gray;
     width: 100%;
     position: fixed;
     background-color: white;
-    top: 0; } }
+    top: 0; 
+    z-index: 1;
+    }
+}
 
 .color {
   background-color: gray; }
@@ -72,6 +81,15 @@
 .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.1);
-  transform: scale(1.1); }
+  transform: scale(1.1); 
+}
 
-/*# sourceMappingURL=main.css.map */
+.catalog {
+    padding-top: 4%;
+}
+
+.marvel-content {
+    padding:5%;
+    color: black;
+    font-family: 'Antic Slab', serif;
+}
