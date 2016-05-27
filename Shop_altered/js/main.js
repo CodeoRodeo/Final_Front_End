@@ -13,5 +13,19 @@ var handleResponse = function(takeinData) {
 	$('#mySweetApiImage')[0].src = takeinData.data.results[0].thumbnail.path + '.' + extension;
 };
 
+function getByName() {
+	var name = $('#nameField').value;
+	$.ajax({
+ 		type: 'GET',
+  		url: 'http://gateway.marvel.com:80/v1/public/characters?name=' + name + '&apikey=e1221702e8688a9361676710fc552a08'
+	}).done(function(data){
+    	popImage(data);
+	} )
+}
+
+function popImage(data) {
+
+}
+
 
 }); // closes document.ready
