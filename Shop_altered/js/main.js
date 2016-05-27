@@ -9,7 +9,7 @@ $.ajax({
     handleResponse(data);
 } )
 var handleResponse = function(takeinData) {
-	$('#mySweetApiImage').src = takeinData.data.results[0].thumbnail.path;
+	$('#mySweetApiImage')[0].src = takeinData.data.results[0].thumbnail.path;
 };
 
 
