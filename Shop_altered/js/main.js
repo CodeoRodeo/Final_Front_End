@@ -9,6 +9,7 @@ $.ajax({
     console.log(data)
 } )
 var handleResponse = function(takeinData) {
+	$('#mySweetApiImage').src = takeinData.results[0].thumbnail.path;
 	imgSrc = takeinData.results[0].thumbnail.path;
 	console.log(imgSrc)
 };
