@@ -5,85 +5,503 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Cosmic Comics</title>
 		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/">
+		<link rel="stylesheet" href="stylesheets/reset.css">
+		<link rel="stylesheet" href="stylesheets/slick.css">
 		<link rel="stylesheet" href="stylesheets/main.css">
 		<link href='https://fonts.googleapis.com/css?family=Antic+Slab' rel='stylesheet' type='text/css'>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
 		<script src="js/jquery.scrollTo.js"></script>
 		<script src="js/scroll.js"></script>
+		<script src="js/slider.js"></script>
 		<script src="js/main.js"></script>
 	</head>
 	<body>
 		<div class="nav-wrapper">
 			<nav>
 				<ul class="nav-main">
-					<li><a href="#page-logo"><img src="images/logo.svg" width="150"></a></li>
+					<li id="logo" ><a href="#page-logo"><img src="images/logo.svg"></a></li>
 					<li><a href="#page-news" class="hvr-grow-shadow nav-links">News</a></li>
 					<li><a href="#page-store" class="hvr-grow-shadow nav-links">Store</a></li>
-					<li><a href="#page-reviews" class="hvr-grow-shadow nav-links">Reviews</a></li>
 					<li><a href="#page-bios" class="hvr-grow-shadow nav-links">Bios</a></li>
-					<li><a href="#page-events" class="hvr-grow-shadow nav-links">Events</a></li>
-					<li><a href="#page-cart" class="nav-links"><img src="images/cart.svg" width="40"></a></li>
+					<li><a href="#page-trivia" class="hvr-grow-shadow nav-links">Trivia</a></li>
+					<li id="cart"><a href="#page-cart" class="nav-links"><img src="images/cart.svg"></a></li>
 				</ul>
 		</div>
-		<section id="page-about">
-			<h2>About Page</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<section id="page-news">
+			<h2>News</h2>
 			
+		<div onload="slideA()" id="container">
+			<img id="img" src="images/slider/img1.jpg"/>
+		</div>
+
 		</section>
 		
-		<section id="page-contact">
-			<h2>Contact Page</h2>
-			<p>Contact info</p>
-			<p>Contact info</p>
-			<p>Contact info</p>
-			<p>Contact info</p>
-			<p>Contact info</p>
-			<p>Contact info</p>
-			<p>Contact info</p>
-			<p>Contact info</p>
-			<p>Contact info</p>
-			<p>Contact info</p>
+		<section id="page-store">
+			<h2>Store</h2>
+			<!-- BEGIN CONTENT AREA -->
+   		<div class="catalog">
+
+        <div class="catalog-item catalog-item-active tagged-new-releases">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic1.jpg">
+                <div>
+                    <div class="catalog-title">INVINCIBLE #88</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h3>4.99</h3></center>
+                        Mark punches Oliver in the face. Or does he?
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-on-sale tagged-staff-picks">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic2.jpg">
+                <div>
+                    <div class="catalog-title">ALL-NEW WOLVERINE</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h4>4.99</h4>
+                            <h3>2.99</h3></center>
+                        This new Wolverine won't take any crap.
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-staff-picks tagged-new-releases">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic3.jpg">
+                <div>
+                    <div class="catalog-title">MANIFEST DESTINY</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h3>4.99</h3></center>
+                        Stuff totally happens. Sorry, I don't follow the book. Cool cover though.
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-on-sale">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic4.jpg">
+                <div>
+                    <div class="catalog-title">MS. MARVEL</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h4>4.99</h4>
+                            <h3>2.99</h3></center>
+                        Same name, new powers, and a totally differnet Ms.
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-other">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic5.jpg">
+                <div>
+                    <div class="catalog-title">ANT-MAN</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h3>4.99</h3></center>
+                        There's a new movie, so that means it's time to reboot the comic.
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-new-releases">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic6.jpg">
+                <div>
+                    <div class="catalog-title">DAREDEVIL</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h3>4.99</h3></center>
+                        Have you seen season 2 yet? Yeah, me either. It's just hard to code and watch Netflix at the same time.
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-staff-picks">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic7.jpg">
+                <div>
+                    <div class="catalog-title">THE AMAZING SPIDER-MAN</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h3>4.99</h3></center>
+                        Hobgoblin battle! I know he's a rip off of the Green Goblin, but he's always beeen my favorite Spidey villian. Especially
+                        when he was posseesed by a demon. That was cool.
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-new-releases">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic8.jpg">
+                <div>
+                    <div class="catalog-title">INVADER ZIM</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h3>4.99</h3></center>
+                        I was definitely past the target demographic age for this show, but I really enjoyed it. The Piggy episode still rules.
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-staff-picks">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic9.jpg">
+                <div>
+                    <div class="catalog-title">SPACEMAN</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h3>4.99</h3></center>
+                        I've never read this, but the covers are done by Dave Johnson, and he's an awesome illustrator.
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-staff-picks">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic10.jpg">
+                <div>
+                    <div class="catalog-title">HARLEY QUINN</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h3>4.99</h3></center>
+                        So I think for the reboot of the character they had her exposed to the same acid as the Joker. You should read it and find
+                        out if I'm right.
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-other">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic11.jpg">
+                <div>
+                    <div class="catalog-title">THE AMAZING SPIDER-MAN 001</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h3>4.99</h3></center>
+                        Nothing I love more than continuity being destroyed over and over with never ending #1 issues to entice new readers. I really
+                        like Spider-Man, but come on guys.
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-new-releases">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic12.jpg">
+                <div>
+                    <div class="catalog-title">ALL NEW AVENGERS</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h3>4.99</h3></center>
+                        Some of the classic Avengers are now playing babysitter to the new teeange members. - I might be getting old and bitter.
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-staff-picks">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic13.jpg">
+                <div>
+                    <div class="catalog-title">A-FORCE</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h3>4.99</h3></center>
+                        No, it's not a book about a bunch of aggressive A-holes, it's about the X-men and the Avengers forming a team together. Get
+                        your mind out of the gutter.
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-other">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic14.jpg">
+                <div>
+                    <div class="catalog-title">CAPTAIN MARVEL</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h3>4.99</h3></center>
+                        I keep telling myself that I'll pick up this comic, but I just haven't gotten around to it yet.
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-staff-picks">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic15.jpg">
+                <div>
+                    <div class="catalog-title">TEENAGE MUNTANT NINJA TURTLES</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h3>4.99</h3></center>
+                        I wouldn't be who I am today without the help of the TMNT. Why are their bandanas all red and not multicolored? I'm not answering
+                        because I'm silently judging you.
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-other">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic16.jpg">
+                <div>
+                    <div class="catalog-title">ALL NEW AVENGERS</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h3>4.99</h3></center>
+                        Same comments as above but this time with a new cover!
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-new-releases">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic17.jpg">
+                <div>
+                    <div class="catalog-title">CHEWBACCA</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h3>4.99</h3></center>
+                        Finally, Chewbacca gets his own comic, and it's all narrated by him without Han Solo getting in the way with that annoying
+                        translating Wookie to English thing he does. This comic is all vowels, and it's about time.
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-staff-picks">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic18.jpg">
+                <div>
+                    <div class="catalog-title">THE FLASH</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h3>4.99</h3></center>
+                        The Flash is probably my favorite DC superhero. Well, the Wally West Flash because he had a good sense of humor. What does
+                        that have to do with this comic? Nothing really. How are you?
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-new-releases">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic19.jpg">
+                <div>
+                    <div class="catalog-title">SPIDER-MAN #1</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h3>4.99</h3></center>
+                        Remember when I was talking about another Spider-Man #1? Well this is a different Spider-Man. It isn't confusing though right?
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-on-sale">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic20.jpg">
+                <div>
+                    <div class="catalog-title">SUPERMAN</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h4>4.99</h4>
+                            <h3>2.99</h3></center>
+                        So according to this title, Super-Man's actions are dooming the world. You can tells he's frustrated since he's saving the
+                        sub while shooting it with his laser eyes.
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-new-releases">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic21.jpg">
+                <div>
+                    <div class="catalog-title">HOWARD THE DUCK</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h3>4.99</h3></center>
+                        Remember that Howard the Duck movie from the 80's? No? Good.
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-new-releases">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic22.jpg">
+                <div>
+                    <div class="catalog-title">CAPTAIN AMERICA</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h3>4.99</h3></center>
+                        So Steve Rodgers as Captain America is back! Only this time he's being chased by a nondescript woman in a plain jumpsuit,
+                        the guy who was Captain America while he was dead, and Bucky/Winter Soldier bringing up the rear.
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-staff-picks">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic23.jpg">
+                <div>
+                    <div class="catalog-title">HELLCAT</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h3>4.99</h3></center>
+                        I've always liked the design of Hellcat, but this cover makes me question all the decisions I've ever made. Too dramatic?
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-item catalog-item-active tagged-on-sale">
+            <div class="catalog-anchor">
+                <img class="catalog-cover" src="images/comic24.jpg">
+                <div>
+                    <div class="catalog-title">CIVIL WAR II</div>
+                    <div class="catalog-popup">
+                        <center>
+                            <h4>4.99</h4>
+                            <h3>2.99</h3></center>
+                        So Captain America Civil War is coming out pretty soon. This comic is nothing like that.
+                        <div class="line-separator"></div>
+                        <div class="catalog-button">
+                            <button type="button">BUY!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- div class="catalog" -->
+		</section>
+
+		<section id="page-bios">
+			<h2>Bios</h2>
+			 <div class="marvel-content">
+        <h2>Featured Marvel Characters</h2>
+       <!--  <input type="text" id="nameField"/>  -->
+        <!-- How about a input field for marvel characters? -->
+        <img src="" id="mySweetApiImage"/>
+    <div>
+		</section>
+
+		<section id="page-trivia">
+			<h2>Trivia</h2>
 		</section>
 
 	</body>
