@@ -14,7 +14,7 @@ var handleResponse = function(takeinData) {
 };
 
 function getByName() {
-	var name = $('#nameField').value;
+	var name = $('#nameField').val();
 	$.ajax({
  		type: 'GET',
   		url: 'http://gateway.marvel.com:80/v1/public/characters?name=' + name + '&apikey=e1221702e8688a9361676710fc552a08'
