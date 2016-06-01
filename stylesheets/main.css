@@ -80,35 +80,9 @@ body {
   -webkit-transform: scale(1.1);
   transform: scale(1.1); }
 
-/*Start Shop content*/
-.line-separator {
-  height: 1px;
-  background: #717171;
-  border-bottom: 1px solid #313030;
-  margin: 10px;
-  margin-bottom: 20px; }
-
-.section {
-  display: inline-block;
-  font-family: 'Antic Slab';
-  font-size: 16pt;
-  padding-right: 20px;
-  height: 45px;
-  line-height: 45px; }
-
-.section-text {
-  line-height: normal;
-  vertical-align: text-bottom; }
-
-.section-inactive:hover {
-  text-decoration: underline; }
-
-.section-active {
-  font-size: 24pt;
-  border-bottom: 2px solid black; }
-
+/*Shop catalog*/
 .catalog {
-  margin: 0 50px 0 50px; }
+  overflow: auto; }
 
 .catalog-item {
   opacity: 0;
@@ -158,5 +132,8 @@ body {
   height: 75px; }
 
 /*End Shop content*/
+/*Start Art-picks*/
+.picks-wrapper {
+  padding-top: 2%; }
 
 /*# sourceMappingURL=main.css.map */

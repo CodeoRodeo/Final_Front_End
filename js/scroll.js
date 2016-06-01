@@ -21,7 +21,7 @@ $(document).on('ready', function(){
 		// console.log(pageToScrollTo);
 
 		// use pageToScrollTo in a .scrollTo function
-		$(window).scrollTo(pageToScrollTo, 800, {offset: -offset});
+		$(window).scrollTo(pageToScrollTo, 300, {offset: -offset});
 
 		// $(this).addClass('color');
 
