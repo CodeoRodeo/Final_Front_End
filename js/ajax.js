@@ -14,7 +14,7 @@ var handleResponse = function(takeinData) {
 };
 
 $('#hero-button').on('click', function(){
-	var retrieveName = $('#hero-button').val();
+	var retrieveName = $('#hero-query').val();
 });
 
 // function getByName() {
