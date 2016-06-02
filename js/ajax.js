@@ -15,6 +15,15 @@ var handleResponse = function(takeinData) {
 
 $('#hero-button').on('click', function(){
 	var retrieveName = $('#hero-query').val();
+		$.ajax({
+		  type: 'GET',
+		  url: 'http://gateway.marvel.com:80/v1/public/characters?name='+retrieveName+'&apikey=e1221702e8688a9361676710fc552a08'
+		}).done(function(data){
+		    handleResponse(data.data.results[0].name)
+		} )
+
+		// ex:  $('#HeroName' - like a header or div).val(data.data.results[0].name)
+
 });
 
 // function getByName() {
