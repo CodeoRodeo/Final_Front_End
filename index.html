@@ -13,13 +13,19 @@
 		<script src="js/scroll.js"></script>
 		<script src="js/slider.js"></script>
 		<script src="js/modal.js"></script>
+		<script src="js/quiz.js"></script>
+		<script src="js/hamburger.js"></script>
 		<script src="js/ajax.js"></script>
 		<script src="js/main.js"></script>
 	</head>
 	<body>
 		<div class="nav-wrapper">
-			<nav>
-				<ul class="nav-main">
+			<div href="#" class="hamburger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+				<ul class="nav-main menu">
 					<li id="logo" ><a href="#page-logo"><img src="images/logo.svg"></a></li>
 					<li><a href="#page-news" class="hvr-grow-shadow nav-links">News</a></li>
 					<li><a href="#page-store" class="hvr-grow-shadow nav-links">Store</a></li>
@@ -42,8 +48,7 @@
 		<section id="page-store">
 			<h2>Store</h2>
 		   	<div class="catalog">
-
-		        <div class="catalog-item catalog-item-active">
+				<div class="catalog-item catalog-item-active">
 		            <div class="catalog-anchor">
 		                <img class="catalog-cover" src="images/comic1.jpg">
 		                <div>
@@ -499,56 +504,98 @@
 		        </div>
 		    </div>
 		</section>
+			<div class="modal-wrapper">
+			  	<div class="modal">
+				    <header class="modal-header">
+				      <button class="btn js-modal-close">X</button>
+				    </header>
+				    <div class="modal-content">
+				      <h3>Title of Modal</h3>
+				      <p>Content of Modal</p>
+			    </div>
+			</div>
+	    <section id="page-art">
+	    	<h2>Art Picks</h2>
+	    	<center>
+		    <div class="picks-wrapper">
+		    	<a href="#"><img class="image-picks" src="images/art_picks/pick1.jpg"></a>
+		    	<a href="#"><img class="image-picks" src="images/art_picks/pick2.jpg"></a>
+		    	<a href="#"><img class="image-picks" src="images/art_picks/pick3.jpg"></a>
+		    	<a href="#"><img class="image-picks" src="images/art_picks/pick4.jpg"></a>
+		    	<a href="#"><img class="image-picks" src="images/art_picks/pick5.jpg"></a>
+		    	<a href="#"><img class="image-picks" src="images/art_picks/pick6.jpg"></a>
+		    	<a href="#"><img class="image-picks" src="images/art_picks/pick7.jpg"></a>
+		    	<a href="#"><img class="image-picks" src="images/art_picks/pick8.jpg"></a>
+		    	<a href="#"><img class="image-picks" src="images/art_picks/pick9.jpg"></a>
+		    	<a href="#"><img class="image-picks" src="images/art_picks/pick10.jpg"></a>
+		    	<a href="#"><img class="image-picks" src="images/art_picks/pick11.jpg"></a>
+		    	<a href="#"><img class="image-picks" src="images/art_picks/pick12.jpg"></a>
+		    	<a href="#"><img class="image-picks" src="images/art_picks/pick13.jpg"></a>
+		    	<a href="#"><img class="image-picks" src="images/art_picks/pick14.jpg"></a>
+		    	<a href="#"><img class="image-picks" src="images/art_picks/pick15.jpg"></a>
+		    </div>
+			</center>
+		</section>
 
-		<div class="modal-wrapper">
-  <div class="modal">
-    <header class="modal-header">
-      <button class="btn js-modal-close">X</button>
-    </header>
-    <div class="modal-content">
-      <h3>Title of Modal</h3>
-      <p>Content of Modal</p>
-    </div>
-  </div>
-</div>
-
-    <section id="page-art">
-    	<h2>Art Picks</h2>
-	    <div class="picks-wrapper">
-	    	<a href="#"><img class="image-picks" src="images/pick1.jpg"></a>
-	    	<a href="#"><img class="image-picks" src="images/pick2.jpg"></a>
-	    	<a href="#"><img class="image-picks" src="images/pick3.jpg"></a>
-	    	<a href="#"><img class="image-picks" src="images/pick4.jpg"></a>
-	    	<a href="#"><img class="image-picks" src="images/pick5.jpg"></a>
-	    	<a href="#"><img class="image-picks" src="images/pick6.jpg"></a>
-	    	<a href="#"><img class="image-picks" src="images/pick7.jpg"></a>
-	    	<a href="#"><img class="image-picks" src="images/pick8.jpg"></a>
-	    	<a href="#"><img class="image-picks" src="images/pick9.jpg"></a>
-	    	<a href="#"><img class="image-picks" src="images/pick10.jpg"></a>
-	    	<a href="#"><img class="image-picks" src="images/pick11.jpg"></a>
-	    	<a href="#"><img class="image-picks" src="images/pick12.jpg"></a>
-	    	<a href="#"><img class="image-picks" src="images/pick13.jpg"></a>
-	    	<a href="#"><img class="image-picks" src="images/pick14.jpg"></a>
-	    	<a href="#"><img class="image-picks" src="images/pick15.jpg"></a>
-	    </div>
-	</section>
-
-		<section id="page-bios">
-			<h2>Bios</h2>
-			 <div class="marvel-content">
+	<section id="page-bios">
+		<h2>Bios</h2>
+			<div class="marvel-content">
 			 	<img src="" id="mySweetApiImage"/>
-        		<input id="hero-query" type="text">
-        		</input>
-        		<button id="hero-button">
-        		</button>
-       			<!--  <input type="text" id="nameField"/>  -->
+        		<input id="hero-query" type="text"></input>
+        		<button id="hero-button"></button>
         		<!-- How about a input field for marvel characters? -->
     		</div>
-		</section>
+	</section>
 
-		<section id="page-trivia">
+	<section id="page-trivia">
 			<h2>Trivia</h2>
+			<center>
+				<div class='Intro'>
+					<img src="images/marvel_vs_dc.jpg">
+				<h3>Are you up for some comics trivia?</h3>
+				</div>
+				<div class='Question1'>
+					<img src="images/riddler.jpg">
+				<h3>What Character from DC Comics originated from Batman the Animated series?</h3>
+					<ul class="multipleChoice">
+						<li class="cat-one">
+						Catwoman
+						</li>
+						<li class="creep-two">
+						The Creeper
+						</li>
+						<li class="fire-three">
+						Firefly
+						</li>
+						<li class="harley-four">
+						Harley Quinn
+						</li>
+						<li class="freeze-five">
+						Mr. Freeze
+						</li>
+					</ul>
+				</div>
+				<div class='Good1'>
+					<img src="images/harley.png">
+					<h3>Excellent. Harley Quinn is the correct answer.</h3>
+				</div>
+				<div class='Bad1'>
+					<img src="images/riddler_wrong.png">
+					<h3>INCORRECT.</h3>
+				</div>
+			</center>
 		</section>
+	<div class="footer">
+		<center>
+			<span class="socialIcons">
+		    	<a href="https://twitter.com/"><img src="images/twitter.svg" alt="twitter icon" class="socialIcon"></a>
+		        <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="facebook icon" class="socialIcon"></a>
+		        <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="Instagram icon" class="socialIcon"></a>
+		        <a href="https://www.youtube.com/"><img src="images/youtube.svg" alt="Youtube icon" class="socialIcon"></a>
+		        <a href="mailto:hommenid@gmail.com"><img src="images/mail.svg" alt="mail icon" class="socialIcon"></a>
+		    </span>
+		</center>
+	</div>
 
 	</body>
 </html>

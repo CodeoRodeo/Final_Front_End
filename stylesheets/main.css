@@ -1,12 +1,40 @@
+/*@mixin breakpoint($point) {
+    @if $point == small {
+        @media (min-width: 480px) { @content; }
+    }
+    @else if $point == med {
+        @media (min-width: 900px) { @content; }
+    }
+}*/
+/*Hamburger Icon*/
+@media only screen and (max-width: 480px) {
+  .hamburger {
+    cursor: pointer;
+    padding: 15px;
+    display: block; }
+
+  .line {
+    border-bottom: 4px solid #bbb;
+    width: 35px;
+    margin-bottom: 6px; }
+
+  .line:last-child {
+    margin-bottom: 0; }
+
+  .nav li {
+    width: 100%; }
+
+  .menu {
+    display: none; } }
+/*End Hamburger Icon*/
 h2 {
   font-size: 150%;
   padding: 2% 0%;
   padding-left: 3%;
   background-color: white;
-  width: 100%; }
+  width: 25%; }
 
 body {
-  margin: 3%;
   background-color: #e1e1e1; }
 
 #logo {
@@ -18,22 +46,21 @@ body {
   vertical-align: middle;
   line-height: normal; }
 
-@media (min-width: 900px) {
-  .nav-wrapper {
-    display: -webkit-flex;
-    -webkit-align-items: center;
-    align-items: center;
-    /*webkit stuff above*/
-    display: inline-block;
-    border: 3px solid gray;
-    background-color: white;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-    z-index: 1; } }
+.nav-wrapper {
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  /*webkit stuff above*/
+  display: inline-block;
+  border: 3px solid gray;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  z-index: 1; }
 
 .nav-main {
   margin: 0;
@@ -93,7 +120,8 @@ body {
 /*End Slider*/
 /*Shop catalog*/
 .catalog {
-  overflow: auto; }
+  overflow: auto;
+  padding: 10%; }
 
 .catalog-item {
   opacity: 0;
@@ -130,17 +158,13 @@ body {
 
 .catalog-anchor:hover .catalog-popup {
   visibility: visible;
-  background-color: lightyellow;
+  background-color: lightgray;
   border: 5px solid black;
   padding: 5%; }
 
 .icon-on-sale {
   display: none;
-  position: absolute;
-  top: -20px;
-  right: -20px;
-  z-index: 5;
-  height: 75px; }
+  position: absolute; }
 
 /*End Shop content*/
 /*Start Art-picks*/
@@ -179,6 +203,46 @@ body.modal-on {
   margin: 0 0; }
 
 .picks-wrapper {
-  padding-top: 2%; }
+  margin: 5%; }
+
+.footer {
+  padding: 1%;
+  margin: 1%;
+  width: 100%;
+  background-color: gray; }
+
+.socialIcons a {
+  display: inline-block;
+  width: 25px;
+  padding: .5%; }
+
+/*Quiz Section*/
+#page-trivia img {
+  width: 500px; }
+
+.multipleChoice, ul, li {
+  display: inline;
+  list-style: none;
+  padding: 3px; }
+
+.cat-one:hover {
+  background-color: gray; }
+
+.creep-two:hover {
+  background-color: gray; }
+
+.fire-three:hover {
+  background-color: gray; }
+
+.harley-four:hover {
+  background-color: gray; }
+
+.freeze-five:hover {
+  background-color: gray; }
+
+.Question1, .Good1, .Bad1 {
+  display: none; }
+
+/*End Quiz Section*/
 
 /*# sourceMappingURL=main.css.map */
