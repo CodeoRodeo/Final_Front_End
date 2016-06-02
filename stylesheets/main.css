@@ -24,15 +24,25 @@
   .nav li {
     width: 100%; }
 
-  .menu {
-    display: none; } }
+  .menu, #logo, .top-slider, .trivia-time img {
+    /* height: 0;
+     overflow: hidden;
+     transistion: height 0.3s;*/
+    display: none; }
+
+  .open {
+    height: 295px; } }
 /*End Hamburger Icon*/
+/*Navigation*/
 h2 {
   font-size: 150%;
   padding: 2% 0%;
   padding-left: 3%;
   background-color: white;
   width: 25%; }
+
+h3 {
+  position: relative; }
 
 body {
   background-color: #e1e1e1; }
@@ -110,12 +120,12 @@ body {
   -webkit-transform: scale(1.1);
   transform: scale(1.1); }
 
+/*End Navigation*/
 /*Slider*/
 .top-slider {
   padding: 2%;
   margin: 5%;
-  width: 57%;
-  background-color: gray; }
+  width: 57%; }
 
 /*End Slider*/
 /*Shop catalog*/
@@ -171,7 +181,12 @@ body {
 body.modal-on {
   overflow: hidden; }
 
-/*//This will be a great to create a partial named _modal*/
+.image-picks:hover {
+  opacity: 0.5; }
+
+.large-picks {
+  padding-top: 5%; }
+
 .modal-wrapper {
   position: fixed;
   top: 0;
@@ -182,41 +197,34 @@ body.modal-on {
   display: none; }
 
 .modal {
-  width: 300px;
-  min-height: 200px;
+  width: 525px;
+  min-height: 525px;
   margin: 0 auto;
-  transform: translateY(-50%);
+  transform: translateY(-37%);
   margin-top: -100px;
-  background-color: #fff;
+  background-color: gray;
   position: relative;
-  top: 50%;
+  top: 65%;
   border-radius: 5%;
   border-color: black;
   padding: 1%; }
 
 .modal-content > div {
   display: none; }
-.modal-content .modal-title {
-  font-size: 24px;
-  font-weight: bold;
-  border-bottom: 1px solid #eee;
-  margin: 0 0; }
 
 .picks-wrapper {
   margin: 5%; }
 
-.footer {
-  padding: 1%;
-  margin: 1%;
-  width: 100%;
-  background-color: gray; }
+/*End Art Picks*/
+/*Reviews*/
+.dead-reviews {
+  width: 65%; }
 
-.socialIcons a {
-  display: inline-block;
-  width: 25px;
-  padding: .5%; }
-
+/*End Reviews*/
 /*Quiz Section*/
+.trivia-time {
+  padding: 5%; }
+
 #page-trivia img {
   width: 500px; }
 
@@ -244,5 +252,33 @@ body.modal-on {
   display: none; }
 
 /*End Quiz Section*/
+/*Start Footer*/
+.footer {
+  padding: 1%;
+  margin: 1%;
+  width: 100%;
+  background-color: gray; }
+
+.socialIcons a {
+  display: inline-block;
+  width: 25px;
+  padding: .5%; }
+
+.twitIcon:hover {
+  opacity: 0.3; }
+
+.faceIcon:hover {
+  opacity: 0.3; }
+
+.instaIcon:hover {
+  opacity: 0.3; }
+
+.youIcon:hover {
+  opacity: 0.3; }
+
+.mailIcon:hover {
+  opacity: 0.3; }
+
+/*End Footer*/
 
 /*# sourceMappingURL=main.css.map */

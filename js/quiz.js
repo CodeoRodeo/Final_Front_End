@@ -1,11 +1,13 @@
 $(document).on('ready', function(){
 	setTimeout(function() {
-	    $('.Intro').fadeOut();
+	    $('.Intro').fadeOut(function(){
+			$('.Question1').fadeIn();	    	
+	    });
 	}, 3000);
 
-	setTimeout(function() {
-	    $('.Question1').fadeIn();
-	}, 4000);
+	// setTimeout(function() {
+	//     $('.Question1').fadeIn();
+	// }, 4000);
 
 
 
@@ -20,11 +22,11 @@ $(document).on('ready', function(){
 		}
 	};
 
-	$('.creep-two').on('click', function(){
+	$('.harley-four').on('click', function(){
 		doorChoice(3);
 	});
 
-	$('.cat-one, .fire-three, .harley-four, .freeze-five').on('click', function(){
+	$('.cat-one, .creep-two, .fire-three, .freeze-five').on('click', function(){
 		doorChoice(0);
 	});
 });

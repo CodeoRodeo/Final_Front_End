@@ -31,12 +31,21 @@
     width: 100%;
 }
 
-.menu{
+.menu, #logo, .top-slider, .trivia-time img{
+   /* height: 0;
+    overflow: hidden;
+    transistion: height 0.3s;*/
     display: none;
 
     }
-}
+
+.open {
+    height: 295px;
+    }
+};
 /*End Hamburger Icon*/
+
+/*Navigation*/
 
 h2 {
     font-size: 150%;
@@ -44,6 +53,10 @@ h2 {
     padding-left: 3%;
     background-color: white;
     width: 25%;
+}
+
+h3 {
+    position: relative;
 }
 
 body {
@@ -132,7 +145,7 @@ body {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-
+/*End Navigation*/
 /*Slider*/
 
 .top-slider {
@@ -140,7 +153,6 @@ body {
     padding: 2%;
     margin: 5%;
     width: 57%;
-    background-color: gray;
 }
 
 /*End Slider*/
@@ -215,7 +227,11 @@ body {
 
 }
 
-/*//This will be a great to create a partial named _modal*/
+.image-picks:hover {opacity: 0.5;}
+
+.large-picks {
+    padding-top: 5%;
+}
 
 .modal-wrapper {
     position: fixed;
@@ -228,14 +244,14 @@ body {
 }
 
 .modal {
-    width:  300px;
-    min-height: 200px;
+    width:  525px;
+    min-height: 525px;
     margin: 0 auto;
-    transform: translateY(-50%);
+    transform: translateY(-37%);
     margin-top: -100px;
-    background-color: #fff;
+    background-color: gray;
     position: relative;
-    top: 50%;
+    top: 65%;
     border-radius: 5%;
     border-color: black;
     padding: 1%;
@@ -246,13 +262,6 @@ body {
     > div {
         display: none;
     }
-
-    .modal-title {
-        font-size: 24px;
-        font-weight: bold;
-        border-bottom: 1px solid #eee;
-        margin: 0 0;
-    }
 }
 
 .picks-wrapper {
@@ -260,25 +269,25 @@ margin: 5%;
 
 }
 
-.footer {
-    padding: 1%;
-    margin: 1%;
-    width: 100%;
-    background-color: gray;
-}
+/*End Art Picks*/
 
-.socialIcons a {
-    display: inline-block;
-    width: 25px;
-    padding: .5%;
+/*Reviews*/
+.dead-reviews {
+    width: 65%;
 }
+/*End Reviews*/
 
 /*Quiz Section*/
+
+.trivia-time{
+    padding: 5%;
+}
 
 #page-trivia img{
     width: 500px;
 
 }
+
 .multipleChoice,ul,li{
     display: inline;
     list-style: none;
@@ -308,6 +317,29 @@ margin: 5%;
 }
 
 /*End Quiz Section*/
+
+/*Start Footer*/
+
+.footer {
+    padding: 1%;
+    margin: 1%;
+    width: 100%;
+    background-color: gray;
+}
+
+.socialIcons a {
+    display: inline-block;
+    width: 25px;
+    padding: .5%;
+}
+.twitIcon:hover {opacity: 0.3;}
+.faceIcon:hover {opacity: 0.3;}
+.instaIcon:hover {opacity: 0.3;}
+.youIcon:hover {opacity: 0.3;}
+.mailIcon:hover {opacity: 0.3;}
+
+/*End Footer*/
+
 
 
 

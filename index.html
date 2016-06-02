@@ -30,7 +30,7 @@
 					<li><a href="#page-news" class="hvr-grow-shadow nav-links">News</a></li>
 					<li><a href="#page-store" class="hvr-grow-shadow nav-links">Store</a></li>
 					<li><a href="#page-art" class="hvr-grow-shadow nav-links">Art Picks</a></li>
-					<li><a href="#page-bios" class="hvr-grow-shadow nav-links">Bios</a></li>
+					<li><a href="#page-reviews" class="hvr-grow-shadow nav-links">Reviews</a></li>
 					<li><a href="#page-trivia" class="hvr-grow-shadow nav-links">Trivia</a></li>
 					<li id="cart"><a href="#page-cart" class="nav-links"><img src="images/cart.svg"></a></li>
 				</ul>
@@ -504,94 +504,103 @@
 		        </div>
 		    </div>
 		</section>
+			<!-- start model wrapper -->
 			<div class="modal-wrapper">
-			  	<div class="modal">
-				    <header class="modal-header">
-				      <button class="btn js-modal-close">X</button>
-				    </header>
-				    <div class="modal-content">
-				      <h3>Title of Modal</h3>
-				      <p>Content of Modal</p>
-			    </div>
+			<div class="modal">
+				<header class="modal-header">
+						<button  class="btn js-modal-close">X</button>
+				</header>
+				<div class="modal-content">
+					<div id="modal-content-default">
+						<center>
+							<img class="large-picks" src="images/art_picks/pick1_L.jpg">
+						</center>
+					</div>
+				</div>
 			</div>
+		</div>
 	    <section id="page-art">
 	    	<h2>Art Picks</h2>
 	    	<center>
 		    <div class="picks-wrapper">
-		    	<a href="#"><img class="image-picks" src="images/art_picks/pick1.jpg"></a>
-		    	<a href="#"><img class="image-picks" src="images/art_picks/pick2.jpg"></a>
-		    	<a href="#"><img class="image-picks" src="images/art_picks/pick3.jpg"></a>
-		    	<a href="#"><img class="image-picks" src="images/art_picks/pick4.jpg"></a>
-		    	<a href="#"><img class="image-picks" src="images/art_picks/pick5.jpg"></a>
-		    	<a href="#"><img class="image-picks" src="images/art_picks/pick6.jpg"></a>
-		    	<a href="#"><img class="image-picks" src="images/art_picks/pick7.jpg"></a>
-		    	<a href="#"><img class="image-picks" src="images/art_picks/pick8.jpg"></a>
-		    	<a href="#"><img class="image-picks" src="images/art_picks/pick9.jpg"></a>
-		    	<a href="#"><img class="image-picks" src="images/art_picks/pick10.jpg"></a>
-		    	<a href="#"><img class="image-picks" src="images/art_picks/pick11.jpg"></a>
-		    	<a href="#"><img class="image-picks" src="images/art_picks/pick12.jpg"></a>
-		    	<a href="#"><img class="image-picks" src="images/art_picks/pick13.jpg"></a>
-		    	<a href="#"><img class="image-picks" src="images/art_picks/pick14.jpg"></a>
-		    	<a href="#"><img class="image-picks" src="images/art_picks/pick15.jpg"></a>
+		    	<a href="#" class="js-modal-open"><img class="image-picks" src="images/art_picks/pick1.jpg"></a>
+		    	<a href="#" class="js-modal-open"><img class="image-picks" src="images/art_picks/pick2.jpg"></a>
+		    	<a href="#" class="js-modal-open"><img class="image-picks" src="images/art_picks/pick3.jpg"></a>
+		    	<a href="#" class="js-modal-open"><img class="image-picks" src="images/art_picks/pick4.jpg"></a>
+		    	<a href="#" class="js-modal-open"><img class="image-picks" src="images/art_picks/pick5.jpg"></a>
+		    	<a href="#" class="js-modal-open"><img class="image-picks" src="images/art_picks/pick6.jpg"></a>
+		    	<a href="#" class="js-modal-open"><img class="image-picks" src="images/art_picks/pick7.jpg"></a>
+		    	<a href="#" class="js-modal-open"><img class="image-picks" src="images/art_picks/pick8.jpg"></a>
+		    	<a href="#" class="js-modal-open"><img class="image-picks" src="images/art_picks/pick9.jpg"></a>
+		    	<a href="#" class="js-modal-open"><img class="image-picks" src="images/art_picks/pick10.jpg"></a>
+		    	<a href="#" class="js-modal-open"><img class="image-picks" src="images/art_picks/pick11.jpg"></a>
+		    	<a href="#" class="js-modal-open"><img class="image-picks" src="images/art_picks/pick12.jpg"></a>
+		    	<a href="#" class="js-modal-open"><img class="image-picks" src="images/art_picks/pick13.jpg"></a>
+		    	<a href="#" class="js-modal-open"><img class="image-picks" src="images/art_picks/pick14.jpg"></a>
+		    	<a href="#" class="js-modal-open"><img class="image-picks" src="images/art_picks/pick15.jpg"></a>
 		    </div>
 			</center>
 		</section>
 
-	<section id="page-bios">
-		<h2>Bios</h2>
+	<section id="page-reviews">
+		<h2>Reviews</h2>
+		<center>
+		<p><img class="dead-reviews" src="images/deadpool_review.png"></p>
+		<p><img class="dead-reviews" src="images/deadpoolamerica.png"></p>
+		</center>
 			<div class="marvel-content">
-			 	<img src="" id="mySweetApiImage"/>
+			 	<!-- <img src="" id="mySweetApiImage"/>
         		<input id="hero-query" type="text"></input>
-        		<button id="hero-button"></button>
+        		<button id="hero-button"></button> -->
         		<!-- How about a input field for marvel characters? -->
     		</div>
 	</section>
 
-	<section id="page-trivia">
+		<section id="page-trivia">
 			<h2>Trivia</h2>
-			<center>
+			<div class="trivia-time">
 				<div class='Intro'>
-					<img src="images/marvel_vs_dc.jpg">
-				<h3>Are you up for some comics trivia?</h3>
+						<img src="images/marvel_vs_dc.jpg">
+					<h3>Are you up for some comics trivia?</h3>
 				</div>
 				<div class='Question1'>
-					<img src="images/riddler.jpg">
-				<h3>What Character from DC Comics originated from Batman the Animated series?</h3>
-					<ul class="multipleChoice">
-						<li class="cat-one">
-						Catwoman
-						</li>
-						<li class="creep-two">
-						The Creeper
-						</li>
-						<li class="fire-three">
-						Firefly
-						</li>
-						<li class="harley-four">
-						Harley Quinn
-						</li>
-						<li class="freeze-five">
-						Mr. Freeze
-						</li>
-					</ul>
+						<img src="images/riddler.jpg">
+					<h3>What Character from DC Comics originated from Batman the Animated series?</h3>
+						<ul class="multipleChoice">
+							<li class="cat-one">
+							Catwoman
+							</li>
+							<li class="creep-two">
+							The Creeper
+							</li>
+							<li class="fire-three">
+							Firefly
+							</li>
+							<li class="harley-four">
+							Harley Quinn
+							</li>
+							<li class="freeze-five">
+							Mr. Freeze
+							</li>
+						</ul>
+					</div>
+					<div class='Good1'>
+						<img src="images/harley.png">
+						<h3>Excellent. Harley Quinn is the correct answer.</h3>
+					</div>
+					<div class='Bad1'>
+						<img src="images/riddler_wrong.png">
+						<h3>INCORRECT.</h3>
 				</div>
-				<div class='Good1'>
-					<img src="images/harley.png">
-					<h3>Excellent. Harley Quinn is the correct answer.</h3>
-				</div>
-				<div class='Bad1'>
-					<img src="images/riddler_wrong.png">
-					<h3>INCORRECT.</h3>
-				</div>
-			</center>
+			</div>
 		</section>
 	<div class="footer">
 		<center>
 			<span class="socialIcons">
-		    	<a href="https://twitter.com/"><img src="images/twitter.svg" alt="twitter icon" class="socialIcon"></a>
-		        <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="facebook icon" class="socialIcon"></a>
-		        <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="Instagram icon" class="socialIcon"></a>
-		        <a href="https://www.youtube.com/"><img src="images/youtube.svg" alt="Youtube icon" class="socialIcon"></a>
+		    	<a href="https://twitter.com/"><img src="images/twitter.svg" alt="twitter icon" class="socialIcon twitIcon"></a>
+		        <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="facebook icon" class="socialIcon faceIcon"></a>
+		        <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="Instagram icon" class="socialIcon instaIcon"></a>
+		        <a href="https://www.youtube.com/"><img src="images/youtube.svg" alt="Youtube icon" class="socialIcon youIcon"></a>
 		        <a href="mailto:hommenid@gmail.com"><img src="images/mail.svg" alt="mail icon" class="socialIcon"></a>
 		    </span>
 		</center>
