@@ -1,6 +1,9 @@
 h2 {
   font-size: 150%;
-  padding: 2% 0%; }
+  padding: 2% 0%;
+  padding-left: 3%;
+  background-color: white;
+  width: 100%; }
 
 body {
   margin: 3%;
@@ -80,6 +83,14 @@ body {
   -webkit-transform: scale(1.1);
   transform: scale(1.1); }
 
+/*Slider*/
+.top-slider {
+  padding: 2%;
+  margin: 5%;
+  width: 57%;
+  background-color: gray; }
+
+/*End Slider*/
 /*Shop catalog*/
 .catalog {
   overflow: auto; }
