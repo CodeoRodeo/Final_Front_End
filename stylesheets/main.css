@@ -42,7 +42,8 @@ h2 {
   width: 25%; }
 
 h3 {
-  position: relative; }
+  position: relative;
+  padding: 1%; }
 
 body {
   background-color: #e1e1e1; }
@@ -123,9 +124,12 @@ body {
 /*End Navigation*/
 /*Slider*/
 .top-slider {
+  margin-top: 2%;
+  margin-bottom: 2%;
   padding: 2%;
-  margin: 5%;
-  width: 57%; }
+  width: 100%;
+  border-color: black;
+  background-color: gray; }
 
 /*End Slider*/
 /*Shop catalog*/
@@ -194,7 +198,8 @@ body.modal-on {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  display: none; }
+  display: none;
+  z-index: 500; }
 
 .modal {
   width: 525px;
@@ -223,7 +228,12 @@ body.modal-on {
 /*End Reviews*/
 /*Quiz Section*/
 .trivia-time {
-  padding: 5%; }
+  margin: 15%;
+  padding: 5%;
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 #page-trivia img {
   width: 500px; }
